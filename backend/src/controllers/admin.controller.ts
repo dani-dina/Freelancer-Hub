@@ -87,7 +87,40 @@ const addNewAdmin = async(req : Request, res : Response)=>{
 // update admin by id
 const updateAdminById = async(req : Request, res : Response)=>{
     try{
+        const updateAdminById = await Admin.findByIdAndUpdate(req.params.id,req.body,{ new : true});
+        if(!updateAdminById){
+            return res.status(HTTP_STATUS.NOT_FOUND).json({
+                success : false,
+                message : 'Admin not found '
+            });
+        }
+        return res.status(HTTP_STATUS.OK).json({
+            success : true,
+            message : "Successfully updated",
+        });
+    }catch(error){
+        return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
+            success : false,
+            message : "Internal Server occured while fetchin data",
+            error: error instanceof Error ? error.message : String(error),
+        });
+    }
+}
 
+// Delete admin by id
+const deleteAdminById = async(req : Request, res : Response)=>{
+    try{
+        const deleteAdminById = await Admin.findByIdAndDelete(req.params.id);
+        if(!deleteAdminById){
+            return res.status(HTTP_STATUS.NOT_FOUND).json({
+                success : false,
+                message : 'Admin not found '
+            });
+        }
+        return res.status(HTTP_STATUS.OK).json({
+            success : true,
+            message : "Successfully Deleted",
+        });
     }catch(error){
         return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
             success : false,
