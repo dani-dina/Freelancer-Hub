@@ -2,7 +2,8 @@ import mongoose ,{ Schema, model, Document } from "mongoose";
 import bcrypt from 'bcrypt';
 
 export interface IAdmin extends Document {
-  name: string;
+  firstName: string;
+  lastName : string;
   email: string;
   password: string;
   role: "admin";
@@ -10,7 +11,8 @@ export interface IAdmin extends Document {
 }
 
 const AdminSchema = new Schema<IAdmin>({
-  name: { type: String, required: true },
+  firstName: { type: String, required: true },
+  lastName : {type : String, required : true},
   email: { type: String, unique: true, required: true },
   password: { type: String, required: true },
   role: { type: String, default: "admin" },
