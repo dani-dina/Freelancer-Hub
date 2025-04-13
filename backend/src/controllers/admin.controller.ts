@@ -4,9 +4,11 @@ import { HTTP_STATUS } from '../constants/status';
 import bcrypt from 'bcrypt';
 import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken';
+import { sendVerificationEmail } from '../utils/emailService';
 
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_SECRET = process.env.JWT_SECRET;
+
 if (!JWT_SECRET) {
     throw new Error("JWT_SECRET is not defined in environment variables");
 }
@@ -82,6 +84,8 @@ const addNewAdmin = async(req : Request, res : Response)=>{
         } 
         const admin = new Admin({firstName,lastName,email,password,role,createdAt} );
         await admin.save();
+        const token = jwt.sign({ userId: admin._id }, process.env.JWT_SECRET as string, { expiresIn: '1h' });
+        await sendVerificationEmail(admin.firstName, token);
 
         return res.status(HTTP_STATUS.CREATED).json({
             success : true,
