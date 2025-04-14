@@ -9,6 +9,13 @@ import { sendVerificationEmail } from '../utils/emailService';
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_SECRET = process.env.JWT_SECRET;
 
+export interface AuthenticatedRequest extends Request {
+    user?: {
+      id: string;
+      role: "admin" | "client" | "developer"; // adjust roles as needed
+    };
+  }
+
 if (!JWT_SECRET) {
     throw new Error("JWT_SECRET is not defined in environment variables");
 }
@@ -222,30 +229,41 @@ const refreshToken = async (req: Request, res: Response) => {
     });
 };
 
-// email verificatino
-const emailVerification = async(req : Request, res : Response)=>{
-    try{
 
-    }catch(error){
-        return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
-            success : false,
-            message : "Internal Server occured while fetchin data",
-            error: error instanceof Error ? error.message : String(error),
-        });
-    }
-}
 //get profiles
-const getProfile = async(req : Request, res : Response)=>{
-    try{
-
-    }catch(error){
-        return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
-            success : false,
-            message : "Internal Server occured while fetchin data",
-            error: error instanceof Error ? error.message : String(error),
+const getProfile = async (req: Request, res: Response) => {
+    try {
+      const adminId = req.user?.id; 
+      
+      if (!adminId) {
+        return res.status(HTTP_STATUS.UNAUTHORIZED).json({
+          success: false,
+          message: "Unauthorized access. No admin ID found.",
         });
+      }
+  
+      const admin = await Admin.findById(adminId).select("-password");
+  
+      if (!admin) {
+        return res.status(HTTP_STATUS.NOT_FOUND).json({
+          success: false,
+          message: "Admin profile not found.",
+        });
+      }
+  
+      return res.status(HTTP_STATUS.OK).json({
+        success: true,
+        message: "Admin profile fetched successfully.",
+        data: admin,
+      });
+    } catch (error) {
+      return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
+        success: false,
+        message: "Internal server error while fetching admin profile.",
+        error: error instanceof Error ? error.message : String(error),
+      });
     }
-}
+  };
 
 // search admin
 const searchAdmin = async(req : Request, res : Response)=>{
@@ -274,7 +292,7 @@ const searchAdmin = async(req : Request, res : Response)=>{
       .sort(sortOptions)
       .skip(skip)
       .limit(Number(limit))
-      .select("-password"); // Hide password field
+      .select("-password"); 
 
     const total = await Admin.countDocuments(filters);
 
@@ -292,3 +310,4 @@ const searchAdmin = async(req : Request, res : Response)=>{
         });
     }
 }
+
