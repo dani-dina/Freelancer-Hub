@@ -5,7 +5,9 @@ import bcrypt from 'bcrypt';
 import dotenv from 'dotenv'
 import jwt from 'jsonwebtoken';
 import { sendVerificationEmail } from '../utils/emailService';
+import { dot } from 'node:test/reporters';
 
+dotenv.config();
 const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET;
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -311,3 +313,14 @@ const searchAdmin = async(req : Request, res : Response)=>{
     }
 }
 
+export default{
+    getAdmins,
+    getAdminById,
+    addNewAdmin,
+    updateAdminById,
+    deleteAdminById,
+    getProfile,
+    searchAdmin,
+    refreshToken,
+
+};
