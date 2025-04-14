@@ -246,3 +246,49 @@ const getProfile = async(req : Request, res : Response)=>{
         });
     }
 }
+
+// search admin
+const searchAdmin = async(req : Request, res : Response)=>{
+    try{
+        const {
+            keyword = "",
+            page = 1,
+            limit = 10,
+            sortBy = "createdAt",
+            sortOrder = "desc"
+          } = req.query;
+          const searchRegex = new RegExp(keyword as string, "i");
+          const filters = {
+            $or: [
+              { firstName: searchRegex },
+              { lastName: searchRegex },
+              { email: searchRegex }
+            ]
+          };
+          const sortOptions: any = {
+            [sortBy as string]: sortOrder === "asc" ? 1 : -1
+          }
+          const skip = (Number(page) - 1) * Number(limit);
+
+    const admins = await Admin.find(filters)
+      .sort(sortOptions)
+      .skip(skip)
+      .limit(Number(limit))
+      .select("-password"); // Hide password field
+
+    const total = await Admin.countDocuments(filters);
+
+    return res.status(200).json({
+      results: admins,
+      total,
+      page: Number(page),
+      pages: Math.ceil(total / Number(limit))
+    });
+    }catch(error){
+        return res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json({
+            success : false,
+            message : "Internal Server occured while fetchin data",
+            error: error instanceof Error ? error.message : String(error),
+        });
+    }
+}
