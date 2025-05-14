@@ -40,7 +40,7 @@ router.get('/admins/:id', async (req: Request, res: Response) => {
     }
 });
 
-// Route to add a new admin
+
 router.post('/admins', async (req: Request, res: Response) => {
     try {
         await addNewAdmin(req, res);
@@ -53,5 +53,4 @@ router.post('/admins', async (req: Request, res: Response) => {
     }
 });
 
-// Export the router to use in your main app
 export default router;
