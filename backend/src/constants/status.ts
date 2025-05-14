@@ -1,4 +1,4 @@
-// HTTP Status Codes Constants
+
 
 export const HTTP_STATUS = {
     OK: 200,
