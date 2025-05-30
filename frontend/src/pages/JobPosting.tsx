@@ -181,7 +181,7 @@ const JobPostingPage = () => {
               </div>
             </div>
 
-            {/* Required Skills */}
+            {/* Required Skill set */}
             <div className="mb-6">
               <label htmlFor="newSkill" className="block text-sm font-medium text-gray-700 mb-1">
                 Required Skills
