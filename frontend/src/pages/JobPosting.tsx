@@ -211,7 +211,6 @@ const JobPostingPage = () => {
                 </button>
               </div>
 
-              {/* Skills List */}
               {formData.skills.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-2">
                   {formData.skills.map((skill, index) => (
