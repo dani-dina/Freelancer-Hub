@@ -61,7 +61,7 @@ const JobPostingPage = () => {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main Content section */}
       <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Post a New Job</h2>
