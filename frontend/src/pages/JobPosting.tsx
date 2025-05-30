@@ -25,7 +25,7 @@ const JobPostingPage = () => {
     if (formData.newSkill.trim() && !formData.skills.includes(formData.newSkill.trim())) {
       setFormData({
         ...formData,
-        skills: [...formData.skills, formData.newSkill.trim()],
+        //skills: [...formData.skills, formData.newSkill.trim()],
         newSkill: ''
       });
     }
