@@ -1,7 +1,7 @@
 import mongoose ,{ Schema, model, Document } from "mongoose";
 import bcrypt from 'bcrypt';
 
-export interface IAdmin extends Document {
+interface IAdmin extends Document {
   firstName: string;
   lastName : string;
   email: string;

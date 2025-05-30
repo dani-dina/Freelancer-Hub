@@ -2,7 +2,6 @@ import { HTTP_STATUS } from '../constants/status';
 import { Application } from '../models/application.model';
 import { Request,Response } from 'express';
 
-
 // get all application
 const getApplications =  async(req : Request, res : Response)=>{
     try{
