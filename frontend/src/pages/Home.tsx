@@ -67,7 +67,6 @@ const HomePage = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    // Implement search functionality
     console.log('Searching for:', searchQuery);
   };
 
