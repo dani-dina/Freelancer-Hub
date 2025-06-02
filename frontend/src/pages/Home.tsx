@@ -119,7 +119,7 @@ const HomePage = () => {
           </form>
         </section>
 
-        {/* Categories */}
+        {/* Categorie */}
         <section className="py-8">
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">Popular Job Categories</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
