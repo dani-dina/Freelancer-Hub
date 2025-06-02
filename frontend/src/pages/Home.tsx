@@ -179,7 +179,7 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA  */}
         <section className="py-12 bg-indigo-600 rounded-lg text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Ready to get started?</h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Join thousands of businesses and freelancers who are already working together.</p>
