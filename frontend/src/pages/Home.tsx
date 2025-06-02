@@ -90,7 +90,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main */}
       <main className="container mx-auto px-4 py-8">
         {/* Hero Search */}
         <section className="text-center py-12">
