@@ -72,7 +72,7 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero  */}
+      {/* Hero sec */}
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center">
@@ -90,7 +90,7 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* Main */}
+      {/* Main page*/}
       <main className="container mx-auto px-4 py-8">
         {/* Hero Search sec */}
         <section className="text-center py-12">
