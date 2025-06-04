@@ -2,7 +2,9 @@
 
 function Button() {
   return (
-    <div>Button</div>
+    <div
+    className=""
+    >Button</div>
   )
 }
 
