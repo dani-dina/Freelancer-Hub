@@ -177,7 +177,7 @@ const Footer = () => {
               Terms of Service
             </a>
             <a href="#" className="text-gray-400 hover:text-white text-sm transition">
-              Cookies Settings
+              Cookies Setting
             </a>
           </div>
         </div>
