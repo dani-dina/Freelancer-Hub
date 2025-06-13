@@ -14,8 +14,6 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white pt-12 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          {/* Company Info */}
           <div className="mb-6">
             <h3 className="text-xl font-bold mb-4 flex items-center">
               <span className="bg-indigo-600 rounded-md px-2 py-1 mr-2">WF</span>
