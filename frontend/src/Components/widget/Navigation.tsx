@@ -32,8 +32,6 @@ const Navbar = () => {
             >
               {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
             </button>
-
-            {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <h1 className="text-xl font-bold text-indigo-600">WorkFinder</h1>
             </div>
