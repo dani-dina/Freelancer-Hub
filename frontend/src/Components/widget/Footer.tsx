@@ -40,8 +40,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          {/* For Clients */}
           <div className="mb-6">
             <h4 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
               For Clients
