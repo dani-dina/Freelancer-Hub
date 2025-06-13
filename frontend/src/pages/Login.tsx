@@ -66,8 +66,6 @@ const LoginPage = () => {
               </div>
             </div>
           )}
-
-          {/* Email/Password Form */}
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
