@@ -212,8 +212,6 @@ const MessagingPage = () => {
                       ))}
                     </div>
                   </div>
-
-                  {/* Message Input */}
                   <div className="p-4 border-t border-gray-200">
                     <div className="flex items-center">
                       <button className="p-2 text-gray-400 hover:text-gray-500">
