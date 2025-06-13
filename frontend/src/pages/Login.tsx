@@ -23,8 +23,6 @@ const LoginPage = () => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
-    
-    // Simulate API call
     setTimeout(() => {
       console.log('Login attempt with:', { email, password, rememberMe });
       setIsLoading(false);
