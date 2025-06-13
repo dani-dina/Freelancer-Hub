@@ -105,7 +105,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div className="mb-6">
             <h4 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
               Contact Us
