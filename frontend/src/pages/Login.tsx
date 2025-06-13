@@ -178,8 +178,6 @@ const LoginPage = () => {
                 </span>
               </div>
             </div>
-
-            {/* Social Login Buttons */}
             <div className="mt-6 grid grid-cols-2 gap-3">
               <button
                 onClick={() => handleSocialLogin('google')}
