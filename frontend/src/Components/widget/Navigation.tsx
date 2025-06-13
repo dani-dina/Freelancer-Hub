@@ -35,8 +35,6 @@ const Navbar = () => {
             <div className="flex-shrink-0 flex items-center">
               <h1 className="text-xl font-bold text-indigo-600">WorkFinder</h1>
             </div>
-
-            {/* Desktop Navigation */}
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               <a
                 href="#"
