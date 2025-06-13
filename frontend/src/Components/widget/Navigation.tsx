@@ -67,7 +67,6 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center">
-            {/* Search button (mobile) */}
             <button
               className="md:hidden p-2 text-gray-500 hover:text-gray-700 focus:outline-none"
               onClick={() => setSearchOpen(!searchOpen)}
