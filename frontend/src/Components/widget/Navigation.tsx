@@ -25,7 +25,6 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex justify-between h-16">
-          {/* Logo and main nav (left side) */}
           <div className="flex items-center">
             {/* Mobile menu button */}
             <button
