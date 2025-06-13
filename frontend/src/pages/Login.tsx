@@ -31,7 +31,6 @@ const LoginPage = () => {
 
   const handleSocialLogin = (provider: string) => {
     console.log(`Continue with ${provider}`);
-    // In a real app, implement OAuth flow here
   };
 
   return (
