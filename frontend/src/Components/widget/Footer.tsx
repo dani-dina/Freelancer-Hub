@@ -155,8 +155,6 @@ const Footer = () => {
             </form>
           </div>
         </div>
-
-        {/*  Bar */}
         <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 text-sm mb-4 md:mb-0">
             © {new Date().getFullYear()} WorkFinder. All rights reserved.
