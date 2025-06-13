@@ -79,7 +79,6 @@ const UpdateProfilePage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsEditing(false);
-    // In a real app, you would send the updated profile to your backend
     console.log('Profile updated:', profile);
     if (resumeFile) {
       console.log('Resume uploaded:', resumeFile.name);
