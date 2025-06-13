@@ -89,8 +89,6 @@ const Navbar = () => {
               <FiBell size={20} />
               <span className="absolute top-0 right-0 block h-2 w-2 rounded-full bg-red-400 ring-2 ring-white"></span>
             </button>
-
-            {/* User dropdown */}
             <div className="ml-4 relative">
               <button
                 className="flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
