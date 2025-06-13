@@ -66,8 +66,6 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-
-          {/* Search and user nav (right side) */}
           <div className="flex items-center">
             {/* Search button (mobile) */}
             <button
