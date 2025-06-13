@@ -130,7 +130,6 @@ const Navbar = () => {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="md:hidden">
-          {/* Mobile search */}
           {searchOpen && (
             <div className="px-4 pt-2 pb-3">
               <div className="relative">
