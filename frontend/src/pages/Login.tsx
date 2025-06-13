@@ -52,7 +52,6 @@ const LoginPage = () => {
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-          {/* Error Message */}
           {error && (
             <div className="mb-4 bg-red-50 border-l-4 border-red-500 p-4">
               <div className="flex">
