@@ -9,7 +9,7 @@ import {
   FiFacebook,
   FiGoogle
 } from 'react-icons/fi';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router
+import { Link } from 'react-router-dom'; 
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
