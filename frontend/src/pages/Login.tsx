@@ -26,7 +26,6 @@ const LoginPage = () => {
     setTimeout(() => {
       console.log('Login attempt with:', { email, password, rememberMe });
       setIsLoading(false);
-      // In a real app, you would handle authentication here
       // setError('Invalid email or password'); // Uncomment to simulate error
     }, 1500);
   };
