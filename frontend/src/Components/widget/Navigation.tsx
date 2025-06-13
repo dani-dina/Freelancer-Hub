@@ -15,8 +15,6 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [userDropdownOpen, setUserDropdownOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-
-  // Mock user data - replace with actual user data from your auth context
   const user = {
     name: 'John Doe',
     avatar: 'JD',
