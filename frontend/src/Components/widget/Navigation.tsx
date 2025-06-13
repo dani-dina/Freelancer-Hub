@@ -73,8 +73,6 @@ const Navbar = () => {
             >
               <FiSearch size={20} />
             </button>
-
-            {/* Search input (desktop) */}
             <div className="hidden md:block relative mx-4">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <FiSearch className="text-gray-400" />
