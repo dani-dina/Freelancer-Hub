@@ -101,7 +101,6 @@ const MessagingPage = () => {
 
   const handleSendMessage = () => {
     if (newMessage.trim() && activeConversation) {
-      // In a real app, you would add this to your state management
       console.log('Message sent:', newMessage);
       setNewMessage('');
     }
