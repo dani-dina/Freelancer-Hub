@@ -2,7 +2,7 @@ import { FiStar, FiBriefcase, FiAward, FiMapPin, FiClock, FiDollarSign, FiMail, 
 
 type Skill = {
   name: string;
-  level: number; // 1-5
+  level: number;
 };
 
 type Experience = {
