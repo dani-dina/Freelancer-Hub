@@ -92,8 +92,6 @@ const FreelancerProfilePage = () => {
           </div>
         </div>
       </header>
-
-      {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         {/* Profile Header */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
