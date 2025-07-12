@@ -522,7 +522,7 @@ const UpdateProfilePage = () => {
                 <div>
                   <h3 className="text-lg font-medium text-gray-900">Resume</h3>
                   <p className="mt-1 text-sm text-gray-500">
-                    Upload your resume to help clients learn more about your experience.
+                    Upload your resume to help clients learn more about your experience
                   </p>
                   <div className="mt-4">
                     {resumeFile ? (
