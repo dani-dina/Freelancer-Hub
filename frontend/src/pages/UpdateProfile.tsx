@@ -322,7 +322,7 @@ const UpdateProfilePage = () => {
             </form>
           )}
 
-          {/* Professional Info Tab */}
+          {/* Professional Info Tabs */}
           {activeTab === 'professional' && (
             <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm p-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
