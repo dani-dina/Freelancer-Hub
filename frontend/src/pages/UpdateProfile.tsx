@@ -431,7 +431,7 @@ const UpdateProfilePage = () => {
             </form>
           )}
 
-          {/* Security Tab */}
+          {/* Security Tabs */}
           {activeTab === 'security' && (
             <div className="bg-white rounded-lg shadow-sm p-6">
               <div className="space-y-6">
