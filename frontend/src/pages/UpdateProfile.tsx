@@ -167,7 +167,7 @@ const UpdateProfilePage = () => {
             </div>
           </div>
 
-          {/* Tabs */}
+          {/* Tab */}
           <div className="border-b border-gray-200 mb-6">
             <nav className="flex space-x-8">
               <button
