@@ -159,7 +159,7 @@ const UpdateProfilePage = () => {
                   ) : (
                     <>
                       <FiEdit2 className="mr-2" />
-                      Edit Profile
+                      Edit Profiles
                     </>
                   )}
                 </button>
