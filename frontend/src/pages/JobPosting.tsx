@@ -103,7 +103,7 @@ const JobPostingPage = () => {
 
             {/* Job Details section*/}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-              {/* Job Type section */}
+              {/* Job Type sections */}
               <div>
                 <label htmlFor="jobType" className="block text-sm font-medium text-gray-700 mb-1">
                   Job Type *
