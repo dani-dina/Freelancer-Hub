@@ -179,7 +179,7 @@ const FreelancerProfilePage = () => {
               </div>
             </div>
 
-            {/* Reviews */}
+            {/* Review */}
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h3 className="text-xl font-semibold mb-4">Client Reviews</h3>
               <div className="space-y-6">
