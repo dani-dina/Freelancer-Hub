@@ -164,7 +164,7 @@ const FreelancerProfilePage = () => {
               </div>
             </div>
 
-            {/* Experience */}
+            {/* Experiences */}
             <div className="bg-white rounded-lg shadow-sm p-6">
               <h3 className="text-xl font-semibold mb-4">Work Experience</h3>
               <div className="space-y-6">
