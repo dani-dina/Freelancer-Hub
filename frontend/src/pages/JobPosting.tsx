@@ -66,7 +66,7 @@ const JobPostingPage = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Post a New Job</h2>
           
           <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm p-6">
-            {/* Job Title sections */}
+            {/* Job Title section */}
             <div className="mb-6">
               <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
                 Job Title *
