@@ -39,7 +39,7 @@ const JobPostingPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    // Handle form submissions
     console.log('Job posting submitted:', formData);
   };
 
