@@ -102,7 +102,7 @@ const JobPostingPage = () => {
 
             {/* Job Details section */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-              {/* Job Type sections */}
+              {/* Job Type section */}
               <div>
                 <label htmlFor="jobType" className="block text-sm font-medium text-gray-700 mb-1">
                   Job Type *
@@ -124,7 +124,7 @@ const JobPostingPage = () => {
                 </select>
               </div>
 
-              {/* Location sections */}
+              {/* Location section */}
               <div>
                 <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
                   Location *
