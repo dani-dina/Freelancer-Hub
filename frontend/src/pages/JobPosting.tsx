@@ -83,7 +83,7 @@ const JobPostingPage = () => {
               />
             </div>
 
-            {/* Job Description sections */}
+            {/* Job Description section */}
             <div className="mb-6">
               <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
                 Job Description *
