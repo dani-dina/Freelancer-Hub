@@ -124,7 +124,7 @@ const JobPostingPage = () => {
                 </select>
               </div>
 
-              {/* Location section */}
+              {/* Location sections */}
               <div>
                 <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
                   Location *
