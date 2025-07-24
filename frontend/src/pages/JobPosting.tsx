@@ -146,7 +146,7 @@ const JobPostingPage = () => {
                 </div>
               </div>
 
-              {/* Salary Range sections */}
+              {/* Salary Range section */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   Salary Range
