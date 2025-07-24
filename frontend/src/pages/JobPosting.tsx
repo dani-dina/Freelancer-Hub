@@ -105,7 +105,7 @@ const JobPostingPage = () => {
               {/* Job Type section */}
               <div>
                 <label htmlFor="jobType" className="block text-sm font-medium text-gray-700 mb-1">
-                  Job Type *
+                  Job Type 
                 </label>
                 <select
                   id="jobType"
