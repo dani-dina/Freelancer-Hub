@@ -45,7 +45,7 @@ const LoginPage = () => {
             to="/register" 
             className="font-medium text-indigo-600 hover:text-indigo-500"
           >
-            create a new account
+            create new account
           </Link>
         </p>
       </div>
