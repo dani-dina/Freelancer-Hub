@@ -106,7 +106,7 @@ const LoginPage = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="py-2 pl-10 pr-10 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
-                  placeholder="•"
+                  placeholder="•******"
                 />
                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center">
                   <button
