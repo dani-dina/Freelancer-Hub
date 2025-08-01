@@ -27,7 +27,7 @@ interface RegistrationData {
   // Freelancer specific
   skills?: string[];
   hourlyRate?: number;
-  // Client specific
+  // Client 
   companyName?: string;
 }
 
