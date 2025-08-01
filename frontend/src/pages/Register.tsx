@@ -24,7 +24,7 @@ interface RegistrationData {
   phone: string;
   password: string;
   confirmPassword: string;
-  // Freelancer specific
+  // Freelancer 
   skills?: string[];
   hourlyRate?: number;
   // Client 
