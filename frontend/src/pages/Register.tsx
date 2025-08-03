@@ -24,10 +24,10 @@ interface RegistrationData {
   phone: string;
   password: string;
   confirmPassword: string;
-  // Freelancer c
+  // Freelancer only
   skills?: string[];
   hourlyRate?: number;
-  // Client 
+  // Client h
   companyName?: string;
 }
 
