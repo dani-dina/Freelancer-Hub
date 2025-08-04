@@ -513,7 +513,7 @@ const UpdateProfilePage = () => {
             </div>
           )}
 
-          {/* Documents Tab */}
+          {/* Document Tab */}
           {activeTab === 'documents' && (
             <div className="bg-white rounded-lg shadow-sm p-6">
               <div className="space-y-6">
