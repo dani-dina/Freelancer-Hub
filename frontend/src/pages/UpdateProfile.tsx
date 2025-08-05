@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { 
-  FiUser, 
+import {  
   FiMail, 
   FiPhone, 
   FiMapPin, 
